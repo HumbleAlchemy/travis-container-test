@@ -1,4 +1,5 @@
 #!/bin/bash
+set -e
 echo 'List files from cached directories'
 echo 'pip:'
 ls $HOME/.cache/pip
