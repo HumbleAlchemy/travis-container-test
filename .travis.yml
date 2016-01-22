@@ -5,6 +5,13 @@ sudo: false
 php:
   - 5.5
 
+cache:
+  apt: true
+
+  directories:
+  - $HOME/.cache/pip
+  - $HOME/download
+
 addons:
   apt:
     packages:
