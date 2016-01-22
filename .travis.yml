@@ -1,0 +1,13 @@
+language: php
+
+sudo: false
+
+php:
+  - 5.5
+
+addons:
+  apt:
+    packages:
+    - python-pip
+
+install: source pip-install.sh
