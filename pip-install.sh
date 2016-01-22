@@ -5,5 +5,8 @@ echo 'pip:'
 ls $HOME/.cache/pip
 echo 'download'
 ls $HOME/download
-pip install fabric
+virtualenv venv
+source venv/bin/activate
 
+pip install fabric
+deactivate

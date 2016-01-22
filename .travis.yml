@@ -1,9 +1,9 @@
-language: python
+language: php
 
 sudo: false
 
-python:
-  - 2.7
+pip:
+  - 5.5
 
 cache:
   apt: true
@@ -12,5 +12,10 @@ cache:
   - $HOME/.cache/pip
   - $HOME/download
 
+addons:
+  apt:
+    packages:
+    - python-pip
+    - python-virtualenv
 
 install: source pip-install.sh
